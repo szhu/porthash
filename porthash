@@ -1,11 +1,5 @@
 #!/usr/bin/env python
 
-# def port_hash(s):
-# 	import hashlib #, time
-# 	hash = hashlib.sha1()
-# 	hash.update(s)
-# 	return int(str(int(hash.hexdigest(), 16))[:4])+1000
-
 def int_hash(s, min, max):
 	from hashlib import md5
 	hash_int = int(md5(s).hexdigest(), 16)
